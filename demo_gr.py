@@ -10,9 +10,9 @@ from einops import rearrange
 from PIL import Image, ExifTags
 from transformers import pipeline
 
-from flux.cli import SamplingOptions
-from flux.sampling import denoise, get_noise, get_schedule, prepare, unpack
-from flux.util import configs, embed_watermark, load_ae, load_clip, load_flow_model, load_t5
+from src.flux.cli import SamplingOptions
+from src.flux.sampling import denoise, get_noise, get_schedule, prepare, unpack
+from src.flux.util import configs, embed_watermark, load_ae, load_clip, load_flow_model, load_t5
 
 NSFW_THRESHOLD = 0.85
 
